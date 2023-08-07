@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import org.slf4j.Logger;
 
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.LinkedHashMap;
 
 public class RomajiToHiragana {
@@ -19,7 +20,7 @@ public class RomajiToHiragana {
         }
 
         try (java.io.InputStream stream = pathToTable.openStream()) {
-            java.io.BufferedReader reader = new java.io.BufferedReader(new java.io.InputStreamReader(stream));
+            java.io.BufferedReader reader = new java.io.BufferedReader(new java.io.InputStreamReader(stream, StandardCharsets.UTF_8));
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split(",");
