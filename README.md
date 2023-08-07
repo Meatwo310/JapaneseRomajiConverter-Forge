@@ -21,7 +21,7 @@ Also, messages with less than 5 characters will not be converted. To force conve
 ## Credits
 
 In this mod, when converting Romaji to Hiragana,
-[`romaji_to_hiragana.csv`](https://github.com/andree-surya/moji4j/blob/ea0168f125da8791e951eab7cdf18b06a7db705b/src/main/resources/romaji_to_hiragana.csv) in [andree-surya/moji4j](https://github.com/andree-surya/moji4j) for use in this project. A copy of the license is as follows:
+[`romaji_to_hiragana.csv`](https://github.com/andree-surya/moji4j/blob/ea0168f125da8791e951eab7cdf18b06a7db705b/src/main/resources/romaji_to_hiragana.csv) in [andree-surya/moji4j](https://github.com/andree-surya/moji4j) for use in this project. Special thanks to andree-surya! A copy of the license is as follows:
 
 ```
 © Copyright 2016 Andree Surya
@@ -40,7 +40,7 @@ limitations under the License.
 ```
 
 
-## Contributors
+## Other Contributors
 
 Special thanks to those who contributed to the creation of this mod!
 - [@Hiiragi283](https://github.com/Hiiragi283)
@@ -67,10 +67,10 @@ This project is licensed under the Apache License 2.0. See [LICENSE](./LICENSE) 
 
 ## クレジット
 
-このMODでは、ローマ字をひらがなに変換する際に、 [andree-surya/moji4j](https://github.com/andree-surya/moji4j) の [`romaji_to_hiragana.csv`](https://github.com/andree-surya/moji4j/blob/ea0168f125da8791e951eab7cdf18b06a7db705b/src/main/resources/romaji_to_hiragana.csv) を使用しています。ライセンスのコピーは[#Credits](#Credits)を参照してください。
+このMODでは、ローマ字をひらがなに変換する際に、 [andree-surya/moji4j](https://github.com/andree-surya/moji4j) の [`romaji_to_hiragana.csv`](https://github.com/andree-surya/moji4j/blob/ea0168f125da8791e951eab7cdf18b06a7db705b/src/main/resources/romaji_to_hiragana.csv) を変換辞書のベースとして使用しています。andree-surya氏にスペシャルなサンキューを。ライセンスのコピーは[#Credits](#Credits)を参照してください。
 
 
-## 貢献者
+## その他の貢献者
 
 このMODの作成に貢献してくださった方々にスペシャルなサンキューを!
 - [@Hiiragi283](https://github.com/Hiiragi283)
