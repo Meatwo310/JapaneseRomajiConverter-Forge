@@ -1,6 +1,7 @@
 # Japanese Romaji Converter
 
-Japanese version is available in [#概要](#概要).
+Japanese version is available in [#概要](#概要).  
+日本語版は[#概要](#概要)から閲覧可能です。
 
 
 # English Version
@@ -9,11 +10,13 @@ Japanese version is available in [#概要](#概要).
 
 This is a mod that automatically converts Romaji sent in chat to Hiragana.
 
+
 ## Usage
 
 When you send a message in chat, it will be automatically converted to Hiragana. Example: `konnnitiha` → `こんにちは`  
 If you put one of the symbols `!#;` at the beginning of the message, it will not be converted. Example: `#Hello, world!` → `Hello, world!`  
 Also, messages with less than 5 characters will not be converted. To force conversion, put one of the symbols `\¥￥` at the beginning of the message. Example: `hi` → `hi`, `\yaa` → `やあ`  
+
 
 ## Credits
 
@@ -36,6 +39,14 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
+
+## Contributors
+
+Special thanks to those who contributed to the creation of this mod!
+- [@Hiiragi283](https://github.com/Hiiragi283)
+- [@daizu-007](https://github.com/daizu-007)
+
+
 ## License
 This project is licensed under the Apache License 2.0. See [LICENSE](./LICENSE) for more details.
 
@@ -45,6 +56,7 @@ This project is licensed under the Apache License 2.0. See [LICENSE](./LICENSE) 
 ## 概要
 
 チャットで送信されたローマ字を、自動でひらがなに変換するMODです。
+
 
 ## 使い方
 
@@ -56,6 +68,13 @@ This project is licensed under the Apache License 2.0. See [LICENSE](./LICENSE) 
 ## クレジット
 
 このMODでは、ローマ字をひらがなに変換する際に、 [andree-surya/moji4j](https://github.com/andree-surya/moji4j) の [`romaji_to_hiragana.csv`](https://github.com/andree-surya/moji4j/blob/ea0168f125da8791e951eab7cdf18b06a7db705b/src/main/resources/romaji_to_hiragana.csv) を使用しています。ライセンスのコピーは[#Credits](#Credits)を参照してください。
+
+
+## 貢献者
+
+このMODの作成に貢献してくださった方々にスペシャルなサンキューを!
+- [@Hiiragi283](https://github.com/Hiiragi283)
+- [@daizu-007](https://github.com/daizu-007)
 
 
 ## ライセンス
