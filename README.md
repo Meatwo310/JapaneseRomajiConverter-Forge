@@ -40,7 +40,7 @@ limitations under the License.
 ```
 
 
-## Other Contributors
+## Contributors
 
 Special thanks to those who contributed to the creation of this mod!
 - [@Hiiragi283](https://github.com/Hiiragi283)
@@ -70,7 +70,7 @@ This project is licensed under the Apache License 2.0. See [LICENSE](./LICENSE) 
 このMODでは、ローマ字をひらがなに変換する際に、 [andree-surya/moji4j](https://github.com/andree-surya/moji4j) の [`romaji_to_hiragana.csv`](https://github.com/andree-surya/moji4j/blob/ea0168f125da8791e951eab7cdf18b06a7db705b/src/main/resources/romaji_to_hiragana.csv) を変換辞書のベースとして使用しています。andree-surya氏にスペシャルなサンキューを。ライセンスのコピーは[#Credits](#Credits)を参照してください。
 
 
-## その他の貢献者
+## 貢献者
 
 このMODの作成に貢献してくださった方々にスペシャルなサンキューを!
 - [@Hiiragi283](https://github.com/Hiiragi283)
