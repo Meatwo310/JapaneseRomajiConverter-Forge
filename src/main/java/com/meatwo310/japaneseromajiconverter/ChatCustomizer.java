@@ -9,7 +9,7 @@ import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber
 public class ChatCustomizer {
-//    private static final Logger LOGGER = LogUtils.getLogger();
+    // private static final Logger LOGGER = LogUtils.getLogger();
 
     @SubscribeEvent
     public static void onChat(ServerChatEvent.Submitted event) {
@@ -23,63 +23,34 @@ public class ChatCustomizer {
             return;
         }
 
-//        String resultText = "<" + entity.getDisplayName().getString() + "> ";
+        // String resultText = "<" + entity.getDisplayName().getString() + "> ";
         String resultText;
 
-        // 空文字の場合は変換しない
+        // メッセージを条件に応じて変換
         if (baseText.isEmpty()) {
-//            LOGGER.debug("baseText is empty");
-//            resultText += baseText;
+            // 空文字の場合は変換しない
             return;
-        }
-        // 短すぎる場合は変換しない(\や¥などで始まる場合は変換)
-        else if (baseText.length() < 5 && !baseText.matches("^[\\\\¥￥].*$")) {
-//            LOGGER.debug("baseText is too short");
-//            resultText += baseText;
+        }  else if (baseText.length() < 5 && !baseText.matches("^[\\\\¥￥].*$")) {
+            // 短すぎる場合は変換しない(\や¥などで始まる場合は変換)
             return;
-        }
-        // :で始まる場合は変換しない
-        else if (baseText.startsWith(":")) {
-//            LOGGER.debug("baseText starts with :");
-//            resultText += baseText;
+        } else if (baseText.startsWith(":")) {
+            // :で始まる場合は変換しない
             return;
-        }
-        // ASCII文字や\¥￥以外の文字が含まれる場合は変換しない
-        else if (!baseText.matches("^[!-~\\s¥￥]+$")) {
-//            LOGGER.debug("baseText contains non-ASCII characters");
-//            resultText += baseText;
+        } else if (!baseText.matches("^[!-~\\s¥￥]+$")) {
+            // ASCII文字や\¥￥以外の文字が含まれる場合は変換しない
             return;
-        }
-        // !#;で始まる場合は変換しないが、頭文字を取り除いて括弧付きで元のメッセージを示す
-        else if (baseText.matches("^[!#;].*$")) {
-//            LOGGER.debug("baseText starts with !#;");
+        } else if (baseText.matches("^[!#;].*$")) {
+            // !#;で始まる場合は変換しないが、頭文字を取り除いて括弧付きで元のメッセージを示す
             resultText = baseText.substring(1) + " §7(" + baseText + ")";
-        }
-        // \¥￥で始まる場合は、頭文字を取り除いて変換し、括弧付きで元のメッセージを示す
-        else if (baseText.matches("^[\\\\¥￥].*$")) {
-//            LOGGER.debug("baseText starts with \\¥￥");
+        } else if (baseText.matches("^[\\\\¥￥].*$")) {
+            // \¥￥で始まる場合は、頭文字を取り除いて変換し、括弧付きで元のメッセージを示す
             resultText = RomajiToHiragana.convert(baseText.substring(1)) + " §7(" + baseText + ")";
-        }
-        // 条件に当てはまらない普通のローマ字メッセージは変換
-        else {
-//            LOGGER.debug("baseText is normal");
+        } else {
+            // 条件に当てはまらない普通のローマ字メッセージは変換
             resultText = RomajiToHiragana.convert(baseText) + " §7(" + baseText + ")";
         }
 
-        /*
-        MinecraftServer _mcserv = ServerLifecycleHooks.getCurrentServer();
-        if (_mcserv != null) {
-            _mcserv.getPlayerList().broadcastSystemMessage(Component.literal(resultText), false);
-        }
-        entity.sendSystemMessage(Component.literal(resultText));
-        */
-
+        // 変換結果を送信
         event.setMessage(Component.literal(resultText));
-
-        /*
-        if (event.isCancelable()) {
-            event.setCanceled(true);
-        }
-        */
     }
 }
