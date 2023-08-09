@@ -14,8 +14,8 @@ This is a mod that automatically converts Romaji sent in chat to Hiragana.
 ## Usage
 
 When you send a message in chat, it will be automatically converted to Hiragana. Example: `konnnitiha` → `こんにちは`  
-If you put one of the symbols `!#;` at the beginning of the message, it will not be converted. Example: `#Hello, world!` → `Hello, world!`  
-Also, messages with less than 5 characters will not be converted. To force conversion, put one of the symbols `\¥￥` at the beginning of the message. Example: `hi` → `hi`, `\yaa` → `やあ`
+If you put one of the symbols `!#;` at the beginning of the message, it will not be converted. Example: `#Hello, world!` → `#Hello, world!`  
+Also, messages with less than 5 characters will not be converted. To force conversion, put one of the symbols `\¥￥` at the beginning of the message. Example: `yaa` → `yaa`, `\yaa` → `やあ`
 
 
 ## Installation
