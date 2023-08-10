@@ -14,8 +14,15 @@ This is a mod that automatically converts Romaji sent in chat to Hiragana.
 ## Usage
 
 When you send a message in chat, it will be automatically converted to Hiragana. Example: `konnnitiha` → `こんにちは`  
-If you put one of the symbols `!#;` at the beginning of the message, it will not be converted. Example: `#Hello, world!` → `Hello, world!`  
-Also, messages with less than 5 characters will not be converted. To force conversion, put one of the symbols `\¥￥` at the beginning of the message. Example: `hi` → `hi`, `\yaa` → `やあ`  
+If you put one of the symbols `!#;` at the beginning of the message, it will not be converted. Example: `#Hello, world!` → `#Hello, world!`  
+Also, messages with less than 5 characters will not be converted. To force conversion, put one of the symbols `\¥￥` at the beginning of the message. Example: `yaa` → `yaa`, `\yaa` → `やあ`  
+
+
+## Installation
+
+- [Modrinth](https://modrinth.com/mod/japaneseromajiconverter)(recommended)
+- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/japanese-romaji-converter)
+- [GitHub Releases](https://github.com/Meatwo310/JapaneseRomajiConverter-Forge/releases)
 
 
 ## Credits
@@ -61,8 +68,16 @@ This project is licensed under the Apache License 2.0. See [LICENSE](./LICENSE) 
 ## 使い方
 
 チャットでローマ字を送信すると自動的にひらがなに変換されます。 例:`konnnitiha`→`こんにちは`  
-`!#;`のいずれかの記号をメッセージの先頭につけると、変換されなくなります。 例:`#Hello, world!`→`Hello, world!`  
-また、5文字未満のメッセージは変換されません。 強制的に変換するには、`\¥￥`のいずれかの記号をメッセージの先頭につけてください。 例:`hi`→`hi`,`\yaa`→`やあ`  
+`!#;`のいずれかの記号をメッセージの先頭につけると、変換されなくなります。 例:`#Hello, world!`→`#Hello, world!`  
+また、5文字未満のメッセージは変換されません。 強制的に変換するには、`\¥￥`のいずれかの記号をメッセージの先頭につけてください。 例:`yaa`→`yaa`,`\yaa`→`やあ`  
+
+
+## インストール
+
+- [Modrinth](https://modrinth.com/mod/japaneseromajiconverter)(推奨)
+- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/japanese-romaji-converter)
+- [GitHub Releases](https://github.com/Meatwo310/JapaneseRomajiConverter-Forge/releases)
+
 
 
 ## クレジット
