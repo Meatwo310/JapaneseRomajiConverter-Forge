@@ -6,7 +6,7 @@ Japanese version is available in [#概要](#概要).
 
 # English Version
 
-Source cord for Fabric version: https://github.com/Meatwo310/JapaneseRomajiConverter-Fabric/
+Source code for Fabric version: https://github.com/Meatwo310/JapaneseRomajiConverter-Fabric/
 
 ## Description
 
