@@ -6,6 +6,8 @@ Japanese version is available in [#概要](#概要).
 
 # English Version
 
+Source cord for Fabric version: https://github.com/Meatwo310/JapaneseRomajiConverter-Fabric/
+
 ## Description
 
 This is a mod that automatically converts Romaji sent in chat to Hiragana.
@@ -59,6 +61,8 @@ This project is licensed under the Apache License 2.0. See [LICENSE](./LICENSE) 
 
 
 # Japanese Version
+
+Fabric版のソースコード: https://github.com/Meatwo310/JapaneseRomajiConverter-Fabric/
 
 ## 概要
 
